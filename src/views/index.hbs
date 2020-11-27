@@ -1,0 +1,18 @@
+
+    <div class="jumbotron jumbotron-fluid d-block mt100">
+  <div class="container text-center">
+    <h1 class="display-4">Notes-App</h1>
+    <p class="lead mt-5">
+        <span class="h1 text-success">Create</span><span class="h3 text-primary"> Read</span>
+        <span class="h1 text-secondary"> Update</span><span class="h3 text-danger"> Delete</span>
+    </p>
+    <div class="col mt-5">
+      <img class="w-75" src="/img/img-notes.png" alt="">
+  </div>
+  {{#if user}}
+  <a href="/notes/add" class="btn btn-outline-dark mt-5">Create note</a>
+  {{else}}
+  <a href="/users/signin" class="btn btn-outline-dark mt-5">Create note</a>
+   {{/if}}
+  </div>
+</div>
